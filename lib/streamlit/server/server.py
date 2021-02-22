@@ -325,7 +325,7 @@ class Server(object):
                 dict(server=self),
             ),
             (
-                make_url_path_regex(base, "healthzz"),
+                make_url_path_regex(base, "healthz_"),
                 HealthHandler,
                 dict(callback=lambda: self.is_ready_for_browser_connection),
             ),
